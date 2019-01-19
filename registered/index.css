@@ -1,0 +1,21 @@
+body{
+	background-color:#ECECEC;
+	padding-top:120px;
+}
+.loginBox{
+	border:1px solid #808080;
+	padding:50px;
+	border-radius: 10px;
+	padding-bottom: 100px;
+	background-color:#fff;
+	padding-top:30px;
+}
+
+.input-group{
+	margin-top:15px;
+}
+
+.btnBox{
+	margin-top:15px;
+}
+

@@ -1,0 +1,374 @@
+﻿* {
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#AmayaLiu {
+    /*position:fixed;
+    width:100%;
+    height:100%;*/
+}
+
+/*底图背景*/
+audio {
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.1;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+
+    audio:hover {
+        opacity: 1;
+    }
+
+.wall {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+div#background {
+    background: url('../images/preview.jpg') no-repeat;
+    -webkit-animation: dd 100s linear infinite;
+    -moz-animation: dd 100s linear infinite;
+    -o-animation: dd 100s linear infinite;
+    animation: dd 100s linear infinite;
+    background-size: cover;
+}
+
+div#midground {
+    background-image: url('../images/midground.png');
+    z-index: 1;
+    -webkit-animation: cc 100s linear infinite;
+    -moz-animation: cc 100s linear infinite;
+    -o-animation: cc 100s linear infinite;
+    animation: cc 100s linear infinite;
+}
+
+div#foreground {
+    background-image: url('../images/foreground.png');
+    z-index: 2;
+    -webkit-animation: cc 153s linear infinite;
+    -o-animation: cc 153s linear infinite;
+    -moz-animation: cc 153s linear infinite;
+    animation: cc 153s linear infinite;
+}
+
+div#top {
+    background-image: url('../images/midground.png');
+    z-index: 4;
+    -webkit-animation: dd 100s linear infinite;
+    -o-animation: dd 100s linear infinite;
+    animation: da 100s linear infinite;
+}
+
+@-webkit-keyframes cc {
+    from {
+        background-position: 0 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        background-position: 600% 0;
+    }
+}
+
+@-o-keyframes cc {
+    from {
+        background-position: 0 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        background-position: 600% 0;
+    }
+}
+
+@-moz-keyframes cc {
+    from {
+        background-position: 0 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        background-position: 600% 0;
+    }
+}
+
+@keyframes cc {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 600% 0;
+    }
+}
+
+@keyframes da {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 600%;
+    }
+}
+
+@-webkit-keyframes da {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 600%;
+    }
+}
+
+@-moz-keyframes da {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 600%;
+    }
+}
+
+@-ms-keyframes da {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 600%;
+    }
+}
+
+#IndexTime {
+position:fixed;
+font-size:12px;
+color:#ffd2ff;
+width:15vw;
+height:3vh;
+line-height:3vh;
+text-align:center;
+left:42.5%;
+bottom:0;
+}
+
+/*///////*/
+.DreamA {
+    position: fixed;
+    z-index: 9996;
+    height: 50vh;
+    width: 31vw;
+    margin: -37% 0 0 5%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/*222*/
+/*.DreamA {
+    position: fixed;
+    z-index: 9996;
+    height: 600px;
+    width: 270px;
+    margin: -35% 0 0 8%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}*/
+
+.buttonBox {
+    position: relative;
+    float: left;
+    margin:2vh 1vw;
+}
+
+.DreamA button {
+    z-index:9999;
+    width: 150px;
+    height: 50px;
+    position: relative;
+    background: rgba(255, 255, 255, .27);
+    text-transform: uppercase;
+    color: white;
+    /*font-weight: 700;*/
+    letter-spacing: 1px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    font-family: "华文楷体";
+}
+
+/* FIRST BUTTON */
+.border {
+    position: absolute;
+    background: none;
+    transition: all .5s ease-in-out;
+}
+
+#first > .border:nth-of-type(1) {
+    top: 0px;
+    left: 0px;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    width: 20px;
+    height: 20px;
+}
+
+#first > .border:nth-of-type(2) {
+    bottom: 0px;
+    right: 0px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 20px;
+    height: 20px;
+}
+
+#first:hover .border {
+    width: 148px;
+    height: 48px;
+}
+
+#eighth > button {
+    transition: all .5s ease-in-out;
+}
+
+#eighth:hover button {
+    text-shadow: 0 0 10px rgba(255,255,255, 1), 0 0 50px rgba(255, 255, 255, .8), 0 0 75px rgba(255, 255, 255, .6), 0 0 76px rgba(255, 255, 255, .4), 0 0 77px rgba(255, 255, 255, .5), 0 0 78px rgba(255, 255, 255, .4), 0 0 79px rgba(255, 255, 255, .3), 0 0 80px rgba(255, 255, 255, .2), 0 0 85px rgba(255, 255, 255, .1);
+}
+
+/*字体*/
+#TileSize {
+    text-align: center;
+    font-family: "League-Gothic", Courier;
+    font-size: 118px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 20px #fefcc9, 
+        10px -10px 30px #feec85, 
+        -20px -20px 40px #ffae34, 
+        20px -40px 50px #ec760c, 
+        -20px -60px 60px #cd4606, 
+        0 -80px 70px #973716, 
+        10px -90px 80px #451b0e;
+}
+
+/*太极*/
+.square {
+    /*display:none;*/
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 40% 0 0 85% !important;
+    opacity: 0.5;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    animation: rotate infinite linear 5s;
+    margin: 10% auto;
+    -webkit-animation: rotate infinite linear 5s;
+    margin: 10% auto;
+    -moz-animation: rotate infinite linear 5s;
+    margin: 10% auto;
+}
+
+.rect {
+    width: 50px;
+    height: 25px;
+    position: relative;
+    border: 1px #d2d2d2 solid;
+    border-bottom: none;
+}
+
+.inner_circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 1;
+}
+
+.dot {
+    width: 6.25px;
+    height: 6.25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.rect_one {
+    border-radius: 25px 25px 0 0;
+    background: white;
+}
+
+.rect_one_one {
+    bottom: -12.5px;
+    left: 0;
+    background: black;
+}
+
+.rect_one_two {
+    background: white;
+}
+
+.rect_two {
+    border-radius: 0 0 25px 25px;
+    background: black;
+}
+
+.rect_two_one {
+    bottom: 12.5px;
+    right: 0;
+    background: white;
+}
+
+.rect_two_two {
+    background: black;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+/*媒体查询*/
+@media screen and (max-width: 400px) {
+    .DreamA {
+        width:42vw;
+        height:48vh;
+        margin:-39% 0 0 28%;
+        /*border:1px solid red;*/
+        z-index:9999;
+    }
+    .buttonBox {
+        margin:1vh 1vw;
+    }
+    #IndexTime {
+        width:50vw;
+        left:25%;
+        font-size:6px;
+    }
+}

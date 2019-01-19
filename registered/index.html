@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>账号注册</title>
+	<script src="/Scripts/jquery-3.0.0.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+	<script src="/Scripts/vue.min.js" ></script>
+	<link rel="stylesheet" href="index.css">
+	<script src="index.js"></script>
+</head>
+	<div class="container" id="app">
+		<div class="col-lg-4 col-lg-offset-4 loginBox">
+			<div class="page-header row" style="text-align:center;">
+				<h3 class="col-lg-4 col-lg-offset-1"><a href="/login">登陆</a></h3>
+				<h3 class="col-lg-4 col-lg-offset-2"><a style="color:red;font-weight:bold;" href="/registered">注册</a></h3>
+			</div>
+			<form class="bs-example bs-example-form from-inline" role="form">
+				<div class="input-group">
+					<span class="input-group-addon">昵称</span>
+					<input type="text" class="form-control" placeholder="你的昵称" v-model="name" >
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon">手机</span>
+					<input type="text" class="form-control" placeholder="你的手机号" v-model="phone" @keyup="phoneText">
+				</div>
+				<div class="input-group" v-if="codeBox">
+					<span class="input-group-addon">验证码</span>
+					<input type="text" class="form-control " placeholder="手机验证码" :v-model="code">
+					<button id="login_btn" type="button" class="btn btn-primary col-lg-8 " @click="codeBtn">{{codeBtnText}}</button>
+				</div>
+				<!--<div v-if="codeBox">
+					<button id="login_btn" type="button" class="btn btn-primary col-lg-6 col-lg-offset-3 loginBtn">获取验证码</button>
+				</div>-->
+				<div class="input-group">
+					<span class="input-group-addon">密码</span>
+					<input type="password" class="form-control" placeholder="设置密码" :value="pass">
+				</div>
+				<div class="btnBox">
+				 	<button id="login_btn" type="button" data-loading-text="Loading..." class="btn btn-primary col-lg-12 "><span>注</span><span class="col-lg-offset-2">册</span></button>
+				</div>
+			</form>
+		</div>
+	</div>
+<body>
+</body>
+</html>

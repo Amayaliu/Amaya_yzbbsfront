@@ -1,0 +1,183 @@
+{
+    "waifu": {
+        "console_open_msg": ["哈哈，你打开了控制台，是想要看看我的秘密吗？"],
+        "copy_message": ["你都复制了些什么呀，转载要记得加上出处哦"],
+        "screenshot_message": ["照好了嘛，是不是很可爱呢？"],
+      "hidden_message": [ "如果再次相遇，我会更懂得如何珍惜你。再见了陌生人" ],
+        "load_rand_textures": ["我还没有其他衣服呢", "我的新衣服好看嘛"],
+        "hour_tips": {
+            "t5-7": ["早上好！一日之计在于晨，美好的一天就要开始了"],
+            "t7-11": ["上午好！工作顺利嘛，不要久坐，多起来走动走动哦！"],
+            "t11-14": ["中午了，工作了一个上午，现在是午餐时间！"],
+            "t14-17": ["午后很容易犯困呢，今天的运动目标完成了吗？"],
+            "t17-19": ["傍晚了！窗外夕阳的景色很美丽呢，最美不过夕阳红~"],
+            "t19-21": ["晚上好，今天过得怎么样？"],
+            "t21-23": ["已经这么晚了呀，早点休息吧，晚安~"],
+            "t23-5": ["你是夜猫子呀？这么晚还不睡觉，明天起的来嘛"],
+            "default": ["嗨~ 快来逗我玩吧！"]
+        },
+      "referrer_message": {
+        "localhost": [ "欢迎阅读<span style=\"color:#0099cc;\">『", "』</span>", " - " ],
+        "baidu": [ "Hello! 来自 百度搜索 的朋友<br>你是搜索 <span style=\"color:#0099cc;\">[ ", " ]</span> 找到的我吗？" ],
+        "so": [ "Hello! 来自 360搜索 的朋友<br>你是搜索 <span style=\"color:#0099cc;\">", "</span> 找到的我吗？" ],
+        "google": [ "Hello! 来自 谷歌搜索 的朋友<br>欢迎阅读<span style=\"color:#0099cc;\">[ ", " ]</span>", " - " ],
+        "default": [ "Hello! 来自 <span style=\"color:#0099cc;\">", "</span> 的朋友" ],
+        "none": [ "欢迎阅读<span style=\"color:#0099cc;\">『", "』</span>", " - " ]
+      },
+        "referrer_hostname": {
+            "example.com": ["感谢大佬博客的指点-"],
+            "www.fghrsh.net": ["FGHRSH 的博客"]
+        },
+        "model_message": {
+            "1": [""],
+            "2": [""]  
+        },
+        "hitokoto_api_message": {
+            "lwl12.com": ["这句一言来自 <span style=\"color:#0099cc;\">『{source}』</span>", "，是 <span style=\"color:#0099cc;\">{creator}</span> 投稿的", "。"],
+            "fghrsh.net": ["这句一言出处是 <span style=\"color:#0099cc;\">『{source}』</span>，是 <span style=\"color:#0099cc;\">大佬</span> 在 {date} 收藏的！"],
+            "jinrishici.com": ["这句诗词出自 <span style=\"color:#0099cc;\">《{title}》</span>，是 {dynasty}诗人 {author} 创作的！"],
+            "hitokoto.cn": ["这句一言来自 <span style=\"color:#0099cc;\">『{source}』</span>，是 <span style=\"color:#0099cc;\">{creator}</span> 在 hitokoto.cn 投稿的。"]
+        }
+    },
+  "mouseover": [
+    {
+      "selector": ".container a[href^='http']",
+      "text": [ "要看看 <span style=\"color:#0099cc;\">{text}</span> 么？" ]
+    },
+    {
+      "selector": ".fui-home",
+      "text": [ "点击前往首页，想回到上一页可以使用浏览器的后退功能哦" ]
+    },
+    {
+      "selector": ".fui-chat",
+      "text": [ "一言一语，一颦一笑。一字一句，一颗赛艇。" ]
+    },
+    {
+      "selector": ".fui-eye",
+      "text": [ "嗯··· 要切换 看板娘 吗？" ]
+    },
+    {
+      "selector": ".fui-user",
+      "text": [ "嗯···要帮我换件衣服嘛<span style=\"color:#0099cc;\">ヾ(=･ω･=)o</span>" ]
+    },
+    {
+      "selector": ".fui-music",
+      "text": [ "想要听点音乐吗&nbsp;<span style=\"color:#0099cc;\">『清纯不一般的歌♫』</span>" ]
+    },
+    {
+      "selector": ".fui-photo",
+      "text": [ "要和我合影么？" ]
+    },
+    {
+      "selector": ".fui-info-circle",
+      "text": [ "这里有关于我的信息呢" ]
+    },
+    {
+      "selector": ".fui-cross",
+      "text": [ "你不喜欢我了吗..." ]
+    },
+    {
+      "selector": "#url",
+      "text": [ "你的家在哪里呢，好让我去参观参观" ]
+    },
+    {
+      "selector": ".ImageBox",
+      "text": [ "点击图片可以放大呢" ]
+    },
+    {
+      "selector": "c-player a.play-icon",
+      "text": [ "想要听点音乐吗" ]
+    },
+    {
+      "selector": "c-player div.time",
+      "text": [ "在这里可以调整<span style=\"color:#0099cc;\">播放进度</span>呢" ]
+    },
+    {
+      "selector": "c-player div.volume",
+      "text": [ "在这里可以调整<span style=\"color:#0099cc;\">音量</span>呢" ]
+    },
+    {
+      "selector": "c-player div.list-button",
+      "text": [ "<span style=\"color:#0099cc;\">播放列表</span>里都有什么呢" ]
+    },
+    {
+      "selector": "c-player div.lyric-button",
+      "text": [ "有<span style=\"color:#0099cc;\">歌词</span>的话就能跟着一起唱呢" ]
+    },
+    {
+      "selector": "#eighth",
+      "text": [ "前端弱鸡：<br/><span style=\"color:#0099cc;\">Amayaliu</span>正在努力(｀・ω・´)" ]
+    },
+    {
+      "selector": ".test",
+      "text": [ "底层小白：<br/><span style=\"color:#0099cc;\">牵猫散步的鱼</span> 开发中~~~" ]
+    },
+    {
+      "selector": ".test1",
+      "text": [ "还不能测试哦  ╮(╯﹏╰）╭" ]
+    },
+    {
+      "selector": ".kaifa",
+      "text": [ "开发中呢，可以浏览哦<br/><span style=\"color:#0099cc;\">萌新建站(害怕.png)，</span>大佬勿喷。" ]
+    },
+    {
+      "selector": "#live2d",
+      "text": [
+        "站长他最近说：快过年了哦，没时间去陪小姐姐了，人生一大憾事呀。",
+        "站长他最近说：再给我5分钟，这个bug就好了~~~于是一晚上过去了。",
+        "站长他拜托我打广告~~~ <span style=\"color:#0099cc;\">找工作，求推荐</span>",
+        "站长他说：女朋友就是私有变量，只有我这个类才能调用。",
+        "诶~~~最近发现站长<span style=\"color:#0099cc;\">头发</span>越来越少了呢。",
+        "听说你是程序员：嗯~~~ 还有头发  还能学。",
+        "站长他最近说：最近在网络上无意间看见了love2d看娘，身为一个小白真的迷茫.jpg",
+        "站长他最近说：编码不要畏惧变化，要拥抱变化。",
+        "<span style=\"color:#0099cc;\">Hello World！</span>",
+        "站长小提示：做十件事不如做好一件事，夺取话语权只有一条路径，就是超出别人的预期。",
+        "无意间听见站长说：他东西交付之前都会偷偷测试一遍哦。",
+        "偷偷的告诉你一个秘密：问别人之前偷偷谷歌一下，说不定就知道了。",
+        "人生是一场随时准备迎接出乎意料的旅行，我们要收获的，远比想象的多。"
+      ]
+    }
+  ],
+    "click": [
+      {
+        "selector": ".waifu #live2d",
+        "text": [
+          "不要动手动脚的！快把手拿开~~",
+          "真…真的是不知羞耻！",
+          "Hentai！",
+          "再碰要生气了，哼哼",
+          "再摸的话我可要报警了！",
+          "110吗，这里有个变态！"
+        ]
+      },
+      {
+        "selector": ".fui-call",
+        "text": [ "我不太相信缘分，可是缘分却又让我们相遇,我们又见面了。" ]
+      }
+    ],
+    "seasons": [
+      {
+        "date": "01/01",
+        "text": [ 
+          "<span style=\"color:#0099cc;\">元旦</span>了呢，新的一年又开始了，今年是{year}年~" ]
+      },
+      {
+        "date": "02/14",
+        "text": [
+          "又是一年<span style=\"color:#0099cc;\">情人节</span>，{year}年找到对象了嘛~",
+          "<span style=\"color:#0099cc;\">情人节</span>，{year}年找到对象了嘛~"
+        ]
+      },
+        { "date": "03/08", "text": ["今天是<span style=\"color:#0099cc;\">妇女节</span>！"] },
+        { "date": "03/12", "text": ["今天是<span style=\"color:#0099cc;\">植树节</span>，要保护环境呀"] },
+        { "date": "04/01", "text": ["悄悄告诉你一个秘密~<span style=\"background-color:#34495e;\">今天是愚人节，不要被骗了哦~</span>"] },
+        { "date": "05/01", "text": ["今天是<span style=\"color:#0099cc;\">五一劳动节</span>，计划好假期去哪里了吗~"] },
+        { "date": "06/01", "text": ["<span style=\"color:#0099cc;\">儿童节</span>了呢，快活的时光总是短暂，要是永远长不大该多好啊…"] },
+        { "date": "09/03", "text": ["<span style=\"color:#0099cc;\">中国人民抗日战争胜利纪念日</span>，铭记历史、缅怀先烈、珍爱和平、开创未来。"] },
+        { "date": "09/10", "text": ["<span style=\"color:#0099cc;\">教师节</span>，在学校要给老师问声好呀~"] },
+        { "date": "10/01", "text": ["<span style=\"color:#0099cc;\">国庆节</span>，新中国已经成立69年了呢"] },
+        { "date": "11/05-11/12", "text": ["今年的<span style=\"color:#0099cc;\">双十一</span>是和谁一起过的呢~"] },
+        { "date": "12/20-12/31", "text": ["这几天是<span style=\"color:#0099cc;\">圣诞节</span>，主人肯定又去剁手买买买了~"] }
+    ]
+}

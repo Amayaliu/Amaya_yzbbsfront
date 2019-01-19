@@ -1,0 +1,119 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>论坛 - Dream Zone</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script type="text/javascript" src="public/pulr/dcalendar.picker.js"></script>
+    <link rel="stylesheet" href="public/pulr/dcalendar.picker.css">
+    <script src="/Scripts/vue.min.js"></script>
+    <link href="favicon.ico" rel="shortcut icon">
+    <script type="text/javascript" src="Scripts/Home.js"></script>
+    <link type="text/css" href="Content/Home.css" rel="stylesheet" />
+</head>
+   
+<body>
+	<div class="topNav-wrapper"></div>
+    <div class="center-wrapper container col-md-offset-2" >
+		<div class="row" id="app" >
+			<div class="panel panel-info col-lg-8" style="padding:0px;margin-top:20px;">
+			<div class="panel-heading">
+				公告
+			</div>
+			<div class="panel-body"  >
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<span class="badge">新</span>
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+									{{title}}
+								</a>
+								<span class="col-lg-offset-2">管理员:<a href="#">{{name}}</a></span><span class="col-lg-offset-1">{{time}}发布</span>
+							</h4>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse in">
+							<div class="panel-body">
+								{{article}}
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+									{{Twotitle}}
+								</a>
+								<span class="col-lg-offset-2">管理员:<a href="#">{{Twoname}}</a></span>
+								<span class="col-lg-offset-1">{{Twotime}}发布</span>
+							</h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse in">
+							<div class="panel-body">
+								{{Twoarticle}}
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+									{{Threetitle}}
+								</a>
+								<span class="col-lg-offset-2">管理员:<a href="#">{{Threename}}</a></span>
+								<span class="col-lg-offset-1">{{Threetime}}发布</span>
+							</h4>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse in">
+							<div class="panel-body">
+								{{Threearticle}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div>
+			<div class="col-lg-4 ">
+				<h3></h3>
+				<table class="calendar" id="mycalendar"></table>
+			</div>
+			</div>
+		</div>
+		</div>
+	<div class="footer"></div>
+    <pre>
+**
+*　　┏┓　　　┏┓+ +
+*　┏┛┻━━━┛┻┓ + +
+*　┃　　　　　　　┃ 　
+*　┃　　　━　　　┃ ++ + + +
+<span class="gomyblog">* ████━████ ┃+</span>
+
+*　┃　　　　　　　┃ +
+*　┃　　　┻　　　┃
+*　┃　　　　　　　┃ + +
+*　┗━┓　　　┏━┛
+*　　　┃　　　┃　　　　　　　　　　　
+*　　　┃　　　┃ + + + +
+*　　　┃　　　┃
+*　　　┃　　　┃ + 神兽保佑
+*　　　┃　　　┃ 代码无bug　　
+*　　　┃　　　┃　　+　　　　　　　　　
+*　　　┃　 　　┗━━━┓ + +
+*　　　┃ 　　　　　　　┣┓
+*　　　┃ 　　　　　　　┏┛
+*　　　┗┓┓┏━┳┓┏┛ + + + +
+*　　　　┃┫┫　┃┫┫
+*　　　　┗┻┛　┗┻┛+ + + +
+*
+/*
+ ----------------------------------------------------------------------------------
+*/
+</pre>
+    <script type="text/javascript" src="public/pulr/dcalendar.picker.js"></script>
+</body>
+</html>

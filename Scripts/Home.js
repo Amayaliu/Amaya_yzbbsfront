@@ -1,0 +1,52 @@
+$(function(){
+	//加载头部
+		$(".topNav-wrapper").load('/head/index.html',function(){
+			console.log("topNav加载完毕");
+		})
+		
+		//显示日历
+		$("#mycalendar").dcalendar();
+		
+		var headVm= new Vue({
+			el:'#app',
+			data:{
+				name:"",
+				time:"",
+				title:"",
+				article:"",
+				Twoname:"",
+				Twotime:"",
+				Twotitle:"",
+				Twoarticle:"",
+				Threetitle:"",
+				Threename:"",
+				Threetime:"",
+				Threearticle:""
+			}
+		});
+		
+		/*加载文章*/
+		$.ajax({
+			type:'get',
+			url:'/demo/ement.json',
+			datatype:'json',
+			data:'',
+			success:function(data){
+				headVm.name=data[0].name;
+				headVm.time=data[0].time;
+				headVm.title=data[0].title;
+				headVm.article=data[0].article;
+				headVm.Twoname=data[1].name;
+				headVm.Twotime=data[1].time;
+				headVm.Twotitle=data[1].title;
+				headVm.Twoarticle=data[1].article;
+				headVm.Threetitle=data[2].title;
+				headVm.Threename=data[2].name;
+				headVm.Threetime=data[2].time;
+				headVm.Threearticle=data[2].article;
+			},
+			error:function(jqXHR,text,errortext){
+				console.log(text+errortext);
+			}
+		})
+});
