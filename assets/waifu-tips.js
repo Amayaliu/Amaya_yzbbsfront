@@ -53,7 +53,7 @@ function showMessage(text, timeout, flag) {
 function hideMessage(timeout) {
     $('.waifu-tips').stop().css('opacity',1);
     if (timeout === undefined) timeout = 5000;
-    window.setTimeout(function() {sessionStorage.removeItem('waifu-text')}, timeout);
+    window.setTimeout(function () { sessionStorage.removeItem('waifu-text');}, timeout);
     $('.waifu-tips').delay(timeout).fadeTo(200, 0);
 }
 
@@ -146,14 +146,14 @@ function loadTipsMessage(result) {
         $(document).on("mouseover", tips.selector, function (){
             var text = getRandText(tips.text);
             text = text.render({text: $(this).text()});
-            showMessage(text, 3000);
+            showMessage(text, 5000);
         });
     });
     $.each(result.click, function (index, tips){
         $(document).on("click", tips.selector, function (){
             var text = getRandText(tips.text);
             text = text.render({text: $(this).text()});
-            showMessage(text, 3000, true);
+            showMessage(text, 4000, true);
         });
     });
     $.each(result.seasons, function (index, tips){
@@ -244,7 +244,7 @@ function loadTipsMessage(result) {
                 loadModel(result.model['id']);
                 var message = result.model['message'];
                 $.each(waifu_tips.model_message, function(i,val) {if (i==result.model['id']) message = getRandText(val)});
-                showMessage(message, 3000, true);
+                showMessage(message, 4000, true);
             }
         });
     }
@@ -260,14 +260,13 @@ function loadTipsMessage(result) {
             dataType: "json",
             success: function(result) {
                 if (result.textures['id'] == 1 && (modelTexturesId == 1 || modelTexturesId == 0))
-                    showMessage(waifu_tips.load_rand_textures[0], 3000, true);
-                else showMessage(waifu_tips.load_rand_textures[1], 3000, true);
+                    showMessage(waifu_tips.load_rand_textures[0], 4000, true);
+                else showMessage(waifu_tips.load_rand_textures[1], 4000, true);
                 loadModel(modelId, result.textures['id']);
             }
         });
     }
     
-    /* 检测用户活动状态，并在空闲时显示一言 */
     if (live2d_settings.showHitokoto) {
         window.getActed = false; window.hitokotoTimer = 0; window.hitokotoInterval = false;
         $(document).mousemove(function(e){getActed = true;}).keydown(function(){getActed = true;});
@@ -277,7 +276,7 @@ function loadTipsMessage(result) {
     function ifActed() {
         if (!hitokotoInterval) {
             hitokotoInterval = true;
-            hitokotoTimer = window.setInterval(showHitokotoActed, 10000);
+            hitokotoTimer = window.setInterval(showHitokotoActed, 17000);
         }
     }
     
@@ -287,8 +286,8 @@ function loadTipsMessage(result) {
     }
     
     function showHitokotoActed() {
-        if ($(document)[0].visibilityState == 'visible') 
-            showHitokoto();
+        if ($(document)[0].visibilityState == 'visible')
+            showHitokoto(); 
     }
 
     function showHitokoto() {
@@ -299,8 +298,8 @@ function loadTipsMessage(result) {
                         var text = waifu_tips.hitokoto_api_message['lwl12.com'][0];
                         if (!empty(result.author)) text += waifu_tips.hitokoto_api_message['lwl12.com'][1];
                         text = text.render({source: result.source, creator: result.author});
-                        window.setTimeout(function() {showMessage(text+waifu_tips.hitokoto_api_message['lwl12.com'][2], 3000, true);}, 5000);
-                    } showMessage(result.text, 5000, true);
+                        window.setTimeout(function() {showMessage(text+waifu_tips.hitokoto_api_message['lwl12.com'][2], 4500, true);}, 7500);
+                    } showMessage(result.text, 7500, true);
                 });break;
     	    case 'fghrsh.net':
     	        $.getJSON('https://api.fghrsh.net/hitokoto/rand/?encode=jsc&uid=3335',function(result){

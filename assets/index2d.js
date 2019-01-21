@@ -15,13 +15,44 @@
     setInterval("judgeShowOrHide()", 3500);
 };
 
+window.onresize = function () {
+    client("Dream");   
+};
+
+function client(ID) {
+    var clid = document.getElementById(ID);
+    if (document.compatMode === "CSS1Compat") {
+        clid.style.width = document.documentElement.clientWidth + "px";
+        clid.style.height = document.documentElement.clientHeight + "px";
+    }
+    else if (document.compatMode === "BackCompat")  {
+        clid.style.width = document.body.clientWidth + "px";
+        clid.style.height = document.body.clientHeight + "px";
+    }
+}
+
 $('html').on('touchstart', function () {
     audio.play();
 });
 
+var FuiCall = document.getElementById("fui-call");
+FuiCall.onclick = function () {
+    FuiCall.style.display = "none";
+    var Waifu1 = document.getElementById("waifu");
+    setTimeout(function () {
+        Waifu1.style.display = "block";
+    }, 700); 
+};
+
+function judgeShowOrHide() {
+    if ($("#waifu").is(':hidden')) {
+        document.getElementById("fui-call").style.display = "block";
+    } else return;
+}
+
 function show_date_time() {
     window.setTimeout("show_date_time()", 1e3);
-    var BirthDay = new Date("2018/6/7 00:00:00"),  //修改为自己的建站时间
+    var BirthDay = new Date("2018/6/6 00:00:00"),  
         today = new Date,
         timeold = today.getTime() - BirthDay.getTime(),
         msPerDay = 864e5,
@@ -42,22 +73,6 @@ document.addEventListener('visibilitychange', function () {
         document.title = '等你 ~ ~ 快回来吧';
     } else document.title = normal_title;
 });
-
-var FuiCall = document.getElementById("fui-call");
-FuiCall.onclick = function () {
-    FuiCall.style.display = "none";
-    var Waifu1 = document.getElementById("waifu");
-    setTimeout(function () {
-        Waifu1.style.display = "block";
-    }, 700); 
-};
-function judgeShowOrHide() {
-    if ($("#waifu").is(':hidden')) {
-        document.getElementById("fui-call").style.display = "block";
-    } else {
-        return;
-    }
-};
 
 function musiBackground(ID, Src) {
     ID.style.background = Src;

@@ -1,6 +1,5 @@
 try {
-$("<link>").attr({href: "assets/waifu.min.css?v=1.4.2", rel: "stylesheet", type: "text/css"}).appendTo('head');
-    $('body').append('<div class="waifu" id="waifu" style="z-index:9997;"><div class="waifu-tips"></div><canvas id="live2d" class="live2d"></canvas><div class="waifu-tool"><span class="fui-home"></span> <span class="fui-eye"></span>  <span class="fui-chat"></span> <span class="fui-user"> </span> <span class="fui-photo"></span> <span class="fui-info-circle"></span> <span class="fui-music" id="musi"><audio id="audio" loop="loop"><source src="Music/ANirvanaYou.mp3" type="audio/mp4"/></audio></span> <span class="fui-cross" id="fui-cross"></span></div></div>');
+$('body').append('<div class="waifu" id="waifu" style="z-index:9997;"><div class="waifu-tips"></div><canvas id="live2d" class="live2d" width="250" height="280"></canvas><div class="waifu-tool"><span class="fui-home"></span> <span class="fui-eye"></span>  <span class="fui-chat"></span> <span class="fui-user"> </span> <span class="fui-photo"></span> <span class="fui-info-circle"></span> <span class="fui-music" id="musi"><audio id="audio" loop="loop"><source src="Music/ANirvanaYou.mp3" type="audio/mp4"/></audio></span> <span class="fui-cross" id="fui-cross"></span></div></div>');
 $.ajax({url: 'assets/waifu-tips.js?v=1.4.2',dataType:"script", cache: true, async: false});
 $.ajax({url: 'assets/live2d.min.js?v=1.0.5',dataType:"script", cache: true, async: false});
 live2d_settings['hitokotoAPI'] = 'lwl12.com';
@@ -19,7 +18,8 @@ live2d_settings['showF12OpenMsg'] = true;
 live2d_settings['showCopyMessage'] = true;         
 live2d_settings['showWelcomeMessage'] = true;         
 live2d_settings['waifuMinWidth'] = 'disable';     
-live2d_settings['waifuSize'] = '170x400';          
+live2d_settings['waifuSize'] = '170x400';      
+//live2d_settings['waifuSize'] = '250x280';    
 live2d_settings['waifuTipsSize'] = '232xauto';     
 live2d_settings['waifuFontSize'] = '13px';         
 live2d_settings['waifuToolLine'] = '30px';         
